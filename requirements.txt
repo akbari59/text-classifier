@@ -1,0 +1,12 @@
+flask
+black
+jsonify
+requests
+pandas
+scikit-learn
+nltk
+matplotlib
+seaborn
+torch
+transformers
+tqdm
