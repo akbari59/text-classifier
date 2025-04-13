@@ -16,6 +16,17 @@ stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
 class DataPreprocessor:
+    """
+      DataPreprocessor is responsible for cleaning and preprocessing the clinical text data for further use in machine learning tasks.
+
+      It provides functionalities for:
+      - Cleaning and tokenizing the text data
+      - Expanding abbreviations in medical text
+      - Splitting data into training, validation, and test sets
+      - Vectorizing the text data using TF-IDF
+      - Extracting features for model training
+      """
+
     def __init__(self, file_path, text_col='description', mode='tfidf', label_col='label', vectorizer_params=None, random_state=42):
         """
         Parameters:
